@@ -1,0 +1,194 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+ body{
+    background-color:#f2f2f2;
+ }
+ .main-container{
+    background: linear-gradient(#ADACA7, #C9C6BF, #CECBC3);
+}
+.main-bg{
+    background: url('../images/muasinamuana.jpg')no-repeat;
+    background-size:cover;
+    background-position: center;
+    height: 500px;
+}
+.mosaic-bg-1{
+    background: url('../images/1.jpg')no-repeat;
+    background-size:cover;
+    background-position: center top;
+    height: 300px;
+}
+.mosaic-bg-2{
+    background: url('../images/2.jpg')no-repeat;
+    background-size:cover;
+    background-position: center top;
+    height: 300px;
+}.mosaic-bg-3{
+    background: url('../images/3.jpg')no-repeat;
+    background-size:cover;
+    background-position: center;
+    height: 300px;
+}
+.mosaic-bg-4{
+    background: url('../images/couple.jpg')no-repeat;
+    background-size:cover;
+    background-position: center;
+    height: 300px;
+}
+.mosaic-bg-5{
+    background: url('../images/5.jpg')no-repeat;
+    background-size:cover;
+    background-position: center;
+    height: 250px;
+}
+.mosaic-bg-6{
+    background: url('../images/6.jpg')no-repeat;
+    background-size:cover;
+    background-position: center top;
+    height: 250px;
+}
+.mosaic-bg-second{
+    background: url('../images/5.jpg')no-repeat;
+    background-size:cover;
+    background-position: center;
+    height: 300px;
+}
+.mosaic-bg-second2{
+    background: url('../images/muasinamuana.jpg')no-repeat;
+    background-size:cover;
+    background-position: center;
+    height: 300px;
+}
+.mosaic-blanc-bg{
+    background: white;
+    height: 300px;
+}
+.bg-rose{
+    background-color:#FF3B3C;
+    color:white;
+}
+
+.bg-mauve{
+    background-color:#6E3265;
+    color:white;
+}
+.zemi-bg{
+    background: url('https://res.cloudinary.com/aseed/image/upload/v1581282612/muasinamuana_jidxxe.jpg')no-repeat;
+    background-size:cover;
+    background-position: center;
+    height: 500px;
+}
+/*-----------les bgs fin-----------*/
+/*------------les textes---------------------*/
+.text-maj{
+    text-transform: uppercase;
+}
+.text-bold{
+    font-weight:bold;
+}
+.text-rose{
+    color:#FF3B3C;
+}
+
+.text-mauve{
+    color:#6E3265;
+}
+/*------------les tetes fin------------------*/
+/*-----------les marges--------------------*/
+.m-top{
+    margin-top:10%;
+}
+.m-top-mini{
+    margin-top:5%;
+}
+.m-top-xs{
+    margin-top:2.5%;
+}
+.pad{
+    padding: 3%;
+}
+.pad-mini{
+    padding: 1.5%;
+}
+.pad-xs{
+    padding: 1.5%;
+}
+/*------------les marges fin---------------*/
+/*------------les boutons-----------------*/
+.btn-rose{
+    background-color:#FF3B3C;
+    color: white;
+}
+.btn-rose:hover{
+    background-color: white;
+    color:#FF3B3C;
+    border: 1px solid #FF3B3C;
+}
+.btn-mauve{
+    background-color:#6E3265;
+    color: white;
+}
+.btn-mauve:hover{
+    background-color: white;
+    color:#6E3265;
+    border: 1px solid #6E3265;
+}
+/*------------les boutons fin-------------*/
+/*--------------La nav-------------------*/
+.nav-main{
+    float: right;
+}
+.nav-main .nav-link{
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+    transition: all .5s ease;
+}
+.nav-main .nav-link:hover{
+    color: #6E3265;
+    text-transform: uppercase;
+    font-weight: bold;
+    background-color: white;
+}
+/*--------------La nav fin----------------*/
+.round.hollow {
+    margin: 40px 0 0;
+}
+.round.hollow a {
+    border: 2px solid green;
+    border-radius: 35px;
+    color: red;
+    color: green;
+    font-size: 23px;
+    padding: 10px 21px;
+    text-decoration: none;
+    font-family: 'Open Sans', sans-serif;
+}
+.round.hollow a:hover {
+    border: 2px solid green;
+    background-color: white;
+    border-radius: 35px;
+    color: green;
+    font-size: 23px;
+    padding: 10px 21px;
+    text-decoration: none;
+}
+.m-top{
+    margin-top: 10%;
+}
+.m-top-mini{
+    margin-top: 5%;
+}

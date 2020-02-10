@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Nom:</strong>
+  <%= @lamairy.nom %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @lamairy.description %>
+</p>
+
+<%= link_to 'Edit', edit_lamairy_path(@lamairy) %> |
+<%= link_to 'Back', lamairies_path %>

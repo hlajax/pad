@@ -1,0 +1,53 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  nom: MyString
+  prenom: MyString
+  date_de_naissance: MyString
+  heure_de_naissance: MyString
+  lieu_de_naissance: MyString
+  sexe: MyString
+  nom_pere: MyString
+  adresse_pere: MyString
+  date_de_naissance_pere: MyString
+  lieu_de_naissnce_pere: MyString
+  profession_pere: MyString
+  telephone_pere: MyString
+  nationalite_pere: MyString
+  coutume_pere: MyString
+  piece_pere: MyString
+  nom_mere: MyString
+  adresse_mere: MyString
+  date_de_naissance_mere: MyString
+  lieu_de_naissnce_mere: MyString
+  profession_mere: MyString
+  telephone_mere: MyString
+  nationalite_mere: MyString
+  coutume_mere: MyString
+  piece_mere: MyString
+
+two:
+  nom: MyString
+  prenom: MyString
+  date_de_naissance: MyString
+  heure_de_naissance: MyString
+  lieu_de_naissance: MyString
+  sexe: MyString
+  nom_pere: MyString
+  adresse_pere: MyString
+  date_de_naissance_pere: MyString
+  lieu_de_naissnce_pere: MyString
+  profession_pere: MyString
+  telephone_pere: MyString
+  nationalite_pere: MyString
+  coutume_pere: MyString
+  piece_pere: MyString
+  nom_mere: MyString
+  adresse_mere: MyString
+  date_de_naissance_mere: MyString
+  lieu_de_naissnce_mere: MyString
+  profession_mere: MyString
+  telephone_mere: MyString
+  nationalite_mere: MyString
+  coutume_mere: MyString
+  piece_mere: MyString

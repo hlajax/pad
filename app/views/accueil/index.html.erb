@@ -1,0 +1,146 @@
+<div class="container-fluid bg-mauve pad-xs">
+            <div class="row">
+                <div class="col-lg-4 col-12">
+                    <h3 class="text-white text-bold text-maj">
+                        padnaissance
+                    </h3>
+                </div>
+                <div class="col-lg-8 float-right">
+                    <ul class="nav nav-pills nav-main">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Accueil</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">à propos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">enregistrement</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">connexion</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-fluid main-container">
+                <div class="row">
+                    <div class="col-lg-5 offset-lg-1 col-12  m-top">
+                        <h1 class="text-white text-bold text-maj">
+                            déclarez votre<br/> bébé dès sa naissance
+                        </h1>
+                        <div class="row">
+                            <div class="col-lg-12 col-12">
+                                    <!--<a class="btn btn-rose pad" href="http://www.altispad.com/declaration.html">Déclaration en ligne</a>-->
+                                    <button type="button" class="btn btn-rose pad" data-toggle="modal" data-target="#exampleModal">
+  Faire une demande
+</button>
+                                    <!--<a class="btn btn-mauve pad" href="#">Enregistrement en ligne</a>-->
+                                <!---modal-->
+                                <!-- Button trigger modal -->
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Attention !!!</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <p>
+        	En cliquant sur "Accepter & faire une demande", vous acceptez <br>les <a href="#"><b>Conditions générales d'utilisation</b></a> de PAD Naissance et vous nous donnez le droit de déclarer votre enfant. 
+        </p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-dismiss="modal">Refuser</button>
+        <%=link_to "Accepter & faire une demande", new_declaration_path, type:"button", class:"btn btn-success" %>
+      </div>
+    </div>
+  </div>
+</div>
+                                <!--modal fin-->
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-12 main-bg">
+                        </div>
+                </div>
+            </div>
+            <div class="container-fluid bg-mauve">
+                <div class="row">
+                    <div class="col-lg-8 col-12 pad">
+                           <h3 class="text-bold text-maj">Conseils Grossesse</h3> 
+                            <h5>La grossesse est déjà assez dure. Laissez-nous vous aider.</h5>
+                            <div class="row m-top-mini">
+                                <div class="col-6 col-lg-6">
+                                        <h5 class="text-bold text-maj">de semaine en semaine</h5>
+                                        <p>
+                                                Renseignez-vous sur vos symptômes de grossesse, vos changements corporels et vos échographies pour chaque semaine de grossesse.
+                                        </p> 
+                                </div>
+                                <div class="col-6 col-lg-6">
+                                    <h5 class="text-bold text-maj">premier trimestre</h5>
+                                    <p>
+                                            Félicitations, vous êtes enceinte! 
+                                            Maintenant quoi? Il se passe beaucoup de choses au cours du premier trimestre de votre grossesse.
+                                    </p>
+                                </div>
+                               
+                            </div>
+                            <div class="row m-top-mini">
+                                    <div class="col-6 col-lg-6">
+                                            <h5 class="text-bold text-maj">deuxième trimestre</h5>
+                                            <p>
+                                                    Vous allez commencer à avoir l'air enceinte pendant votre deuxième trimestre. 
+                                                    Voici tout ce que vous pouvez attendre de la semaine 13 à la semaine 27.
+                                            </p>
+                                    </div>
+                                    <div class="col-6 col-lg-6">
+                                            <h5 class="text-bold text-maj">troisième trimestre</h5>
+                                            <p>
+                                                    Vous êtes dans le dernier droit maintenant! Ce ne sera pas long avant que vous rencontriez votre bébé. 
+                                                    Préparez-vous avec notre guide pour votre troisième trimestre.
+                                            </p>
+                                    </div>
+                                </div>
+                    </div>
+                    <div class="col-lg-4 col-12 m-top-mini">
+                        <img class="img-fluid" src="images/zemi.png">
+                     </div>
+                </div>
+            </div>
+            <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-lg-6 col-12 mosaic-bg-1"></div>
+                        <div class="col-lg-6 col-12 mosaic-bg-3"></div>
+                    </div>
+                    <div class="row">
+                            <div class="col-lg-4 col-12 mosaic-bg-second"></div>
+                            <div class="col-lg-4 col-12 mosaic-blanc-bg text-center pad">
+                                <h4 class="text-rose text-bold text-maj">
+                                        Rejoignez les milliers de familles qui ont utilisées PadNaissance pour enregistrer  leurs bébés.
+                                </h4>
+                                <a class="btn btn-mauve btn-lg pad m-top-mini" href="http://www.altispad.com/declaration.html">Enregistrez votre enfant</a>
+                            </div>
+                            <div class="col-lg-4 col-12 mosaic-bg-second2"></div>
+                        </div>
+                        <div class="row">
+                                <div class="col-lg-6 col-12 mosaic-bg-4"></div>
+                                <div class="col-lg-6 col-12 mosaic-bg-2"></div>
+                            </div>
+                </div>
+                <div class="container-fluid bg-mauve pad-mini">
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <p>2019 | Padnaissance</p>
+                            </div>
+                        </div>
+                    </div>

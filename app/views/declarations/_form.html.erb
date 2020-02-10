@@ -1,0 +1,162 @@
+<%= form_with(model: declaration, local: true) do |form| %>
+  <% if declaration.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(declaration.errors.count, "error") %> prohibited this declaration from being saved:</h2>
+
+      <ul>
+        <% declaration.errors.full_messages.each do |message| %>
+          <li><%= message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-lg-4">
+      <h5>I. Identité de l'enfant</h5>
+      <hr>
+      <div class="row">
+          <div class="form-group col-lg-6">
+    <%= form.label :nom %>
+    <%= form.text_field :nom, class:"form-control" %>
+  </div>
+
+  <div class="form-group col-lg-6">
+    <%= form.label :prenom %>
+    <%= form.text_field :prenom, class:"form-control" %>
+  </div>
+
+  <div class="form-group col-lg-6">
+    <%= form.label :date_de_naissance %>
+    <%= form.date_field :date_de_naissance, class:"form-control" %>
+  </div>
+
+  <div class="form-group col-lg-6">
+    <%= form.label :heure_de_naissance %>
+    <%= form.time_field :heure_de_naissance, class:"form-control" %>
+  </div>
+
+  <div class="form-group col-lg-6">
+    <%= form.label :lieu_de_naissance %>
+    <%= form.text_field :lieu_de_naissance, class:"form-control" %>
+  </div>
+
+  <div class="form-group col-lg-6">
+    <%= form.label :sexe %>
+    <%= form.text_field :sexe, class:"form-control" %>
+  </div>
+      </div>
+    </div>
+
+    <div class="col-lg-4">
+      <h5>II. Identité du père</h5>
+      <hr>
+      <div class="row">
+        <div class="form-group col-lg-6">
+    <%= form.label :nom %>
+    <%= form.text_field :nom_pere, class:"form-control" %>
+  </div>
+
+  <div class="form-group col-lg-6">
+    <%= form.label :adresse %>
+    <%= form.text_field :adresse_pere, class:"form-control" %>
+  </div>
+
+  <div class="form-group col-lg-6">
+    <%= form.label :date_de_naissance %>
+    <%= form.text_field :date_de_naissance_pere, class:"form-control" %>
+  </div>
+
+  <div class="form-group col-lg-6">
+    <%= form.label :lieu_de_naissance %>
+    <%= form.text_field :lieu_de_naissnce_pere, class:"form-control" %>
+  </div>
+
+  <div class="form-group col-lg-6">
+    <%= form.label :profession %>
+    <%= form.text_field :profession_pere, class:"form-control" %>
+  </div>
+
+  <div class="form-group col-lg-6">
+    <%= form.label :numéro_de_téléphone %>
+    <%= form.text_field :telephone_pere, class:"form-control" %>
+  </div>
+
+  <div class="form-group col-lg-6">
+    <%= form.label :nationalité %>
+    <%= form.text_field :nationalite_pere, class:"form-control" %>
+  </div>
+
+  <div class="form-group col-lg-6">
+    <%= form.label :coutume %>
+    <%= form.text_field :coutume_pere, class:"form-control" %>
+  </div>
+
+  <div class="form-group col-lg-12">
+    <%= form.label :pièce %>
+    <%= form.file_field :piece_pere, class:"form-control" %>
+  </div>
+
+      </div>
+    </div>
+
+
+    <div class="col-lg-4">
+      <h5>III. Identité de la mère</h5>
+      <hr>
+      <div class="row">
+          <div class="form-group col-lg-6">
+    <%= form.label :nom_complet %>
+    <%= form.text_field :nom_mere, class:"form-control" %>
+  </div>
+
+  <div class="form-group col-lg-6">
+    <%= form.label :adresse %>
+    <%= form.text_field :adresse_mere, class:"form-control" %>
+  </div>
+
+  <div class="form-group col-lg-6">
+    <%= form.label :date_de_naissance %>
+    <%= form.text_field :date_de_naissance_mere, class:"form-control" %>
+  </div>
+
+  <div class="form-group col-lg-6">
+    <%= form.label :lieu_de_naissance %>
+    <%= form.text_field :lieu_de_naissnce_mere, class:"form-control" %>
+  </div>
+
+  <div class="form-group col-lg-6">
+    <%= form.label :profession %>
+    <%= form.text_field :profession_mere, class:"form-control" %>
+  </div>
+
+  <div class="form-group col-lg-6">
+    <%= form.label :numéro_de_téléphone %>
+    <%= form.text_field :telephone_mere, class:"form-control" %>
+  </div>
+
+  <div class="form-group col-lg-6">
+    <%= form.label :nationalité %>
+    <%= form.text_field :nationalite_mere, class:"form-control" %>
+  </div>
+
+  <div class="form-group col-lg-6">
+    <%= form.label :coutume %>
+    <%= form.text_field :coutume_mere, class:"form-control" %>
+  </div>
+
+  <div class="form-group col-lg-12">
+    <%= form.label :pièce %>
+    <%= form.file_field :piece_mere, class:"form-control" %>
+  </div>
+    <div class="form-group col-lg-12">
+    <%= form.submit "Confirmer et envoyer sa déclaration", class:"btn btn btn-rose btn-lg form-control" %>
+  </div>
+      </div>
+    </div>
+
+
+<% end %>
+
+  </div>
+</div>

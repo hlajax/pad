@@ -1,0 +1,2 @@
+json.extract! declaration, :id, :nom, :prenom, :date_de_naissance, :heure_de_naissance, :lieu_de_naissance, :sexe, :nom_pere, :adresse_pere, :date_de_naissance_pere, :lieu_de_naissnce_pere, :profession_pere, :telephone_pere, :nationalite_pere, :coutume_pere, :piece_pere, :nom_mere, :adresse_mere, :date_de_naissance_mere, :lieu_de_naissnce_mere, :profession_mere, :telephone_mere, :nationalite_mere, :coutume_mere, :piece_mere, :created_at, :updated_at
+json.url declaration_url(declaration, format: :json)

@@ -1,0 +1,73 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Declarations</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Nom</th>
+      <th>Prenom</th>
+      <th>Date de naissance</th>
+      <th>Heure de naissance</th>
+      <th>Lieu de naissance</th>
+      <th>Sexe</th>
+      <th>Nom pere</th>
+      <th>Adresse pere</th>
+      <th>Date de naissance pere</th>
+      <th>Lieu de naissnce pere</th>
+      <th>Profession pere</th>
+      <th>Telephone pere</th>
+      <th>Nationalite pere</th>
+      <th>Coutume pere</th>
+      <th>Piece pere</th>
+      <th>Nom mere</th>
+      <th>Adresse mere</th>
+      <th>Date de naissance mere</th>
+      <th>Lieu de naissnce mere</th>
+      <th>Profession mere</th>
+      <th>Telephone mere</th>
+      <th>Nationalite mere</th>
+      <th>Coutume mere</th>
+      <th>Piece mere</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @declarations.each do |declaration| %>
+      <tr>
+        <td><%= declaration.nom %></td>
+        <td><%= declaration.prenom %></td>
+        <td><%= declaration.date_de_naissance %></td>
+        <td><%= declaration.heure_de_naissance %></td>
+        <td><%= declaration.lieu_de_naissance %></td>
+        <td><%= declaration.sexe %></td>
+        <td><%= declaration.nom_pere %></td>
+        <td><%= declaration.adresse_pere %></td>
+        <td><%= declaration.date_de_naissance_pere %></td>
+        <td><%= declaration.lieu_de_naissnce_pere %></td>
+        <td><%= declaration.profession_pere %></td>
+        <td><%= declaration.telephone_pere %></td>
+        <td><%= declaration.nationalite_pere %></td>
+        <td><%= declaration.coutume_pere %></td>
+        <td><%= declaration.piece_pere %></td>
+        <td><%= declaration.nom_mere %></td>
+        <td><%= declaration.adresse_mere %></td>
+        <td><%= declaration.date_de_naissance_mere %></td>
+        <td><%= declaration.lieu_de_naissnce_mere %></td>
+        <td><%= declaration.profession_mere %></td>
+        <td><%= declaration.telephone_mere %></td>
+        <td><%= declaration.nationalite_mere %></td>
+        <td><%= declaration.coutume_mere %></td>
+        <td><%= declaration.piece_mere %></td>
+        <td><%= link_to 'Show', declaration %></td>
+        <td><%= link_to 'Edit', edit_declaration_path(declaration) %></td>
+        <td><%= link_to 'Destroy', declaration, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Declaration', new_declaration_path %>
