@@ -1,29 +1,6 @@
 <div class="container-fluid bg-mauve pad-xs">
             <div class="row">
-                <div class="col-lg-4 col-12">
-                    <h3 class="text-white text-bold text-maj">
-                        padnaissance
-                    </h3>
-                </div>
-                <div class="col-lg-8 float-right">
-                    <ul class="nav nav-pills nav-main">
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Accueil</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">à propos</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">enregistrement</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">connexion</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">contact</a>
-                        </li>
-                    </ul>
-                </div>
+                <%=render 'menus/main'%>
             </div>
         </div>
 
@@ -37,7 +14,7 @@
                             <div class="col-lg-12 col-12">
                                     <!--<a class="btn btn-rose pad" href="http://www.altispad.com/declaration.html">Déclaration en ligne</a>-->
                                     <button type="button" class="btn btn-rose pad" data-toggle="modal" data-target="#exampleModal">
-  Faire une demande
+  Envoyez une demande
 </button>
                                     <!--<a class="btn btn-mauve pad" href="#">Enregistrement en ligne</a>-->
                                 <!---modal-->
@@ -55,7 +32,7 @@
       </div>
       <div class="modal-body">
         <p>
-        	En cliquant sur "Accepter & faire une demande", vous acceptez <br>les <a href="#"><b>Conditions générales d'utilisation</b></a> de PAD Naissance et vous nous donnez le droit de déclarer votre enfant. 
+        	En cliquant sur "Accepter & faire une demande", vous acceptez <br>les <a href="/terms/index"><b>Conditions générales d'utilisation</b></a> de PAD Naissance et vous nous donnez l'autorisation de commencer la procédure de déclaration de votre enfant. 
         </p>
       </div>
       <div class="modal-footer">
@@ -126,7 +103,7 @@
                             <div class="col-lg-4 col-12 mosaic-bg-second"></div>
                             <div class="col-lg-4 col-12 mosaic-blanc-bg text-center pad">
                                 <h4 class="text-rose text-bold text-maj">
-                                        Rejoignez les milliers de familles qui ont utilisées PadNaissance pour enregistrer  leurs bébés.
+                                        Rejoignez les milliers de familles qui sont accompagnées par Pad Naissance pour la déclaration de leurs bébés.
                                 </h4>
                                 <a class="btn btn-mauve btn-lg pad m-top-mini" href="http://www.altispad.com/declaration.html">Enregistrez votre enfant</a>
                             </div>

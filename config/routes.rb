@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  get 'contact/index'
+  get 'terms/index'
   resources :acceuil 
   root 'accueil#index'
   resources :declarations
